@@ -14,7 +14,9 @@
   "author": "Semak Artem",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

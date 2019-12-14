@@ -2,7 +2,16 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 
-
+const mysql = require('mysql')
+/*let connection = mysql.createConnection( {
+    host: 'localhost',
+    port: 3000,
+    user: 'root',
+    password: '',
+    database: 'hr',
+})
+connection.connect()
+console.log("app")*/
 const server = http.createServer((req, res)=> {
 
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url)
@@ -45,6 +54,7 @@ const server = http.createServer((req, res)=> {
         }
     })
 })
+
 
 
 
