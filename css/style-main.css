@@ -25,7 +25,7 @@ body {
 	"footer";
 	grid-template-rows: 20px 1fr 20px;
 	background-color: white;
-	min-width: 300px;
+	min-width: 350px;
 }
 
 .platform h1 {
@@ -46,7 +46,6 @@ body {
 	grid-area: header;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: ;
 }
 
 .main-information {
@@ -75,7 +74,9 @@ body {
 	text-align: center;
 	vertical-align: center;
 	text-decoration: none;
-	color: #000; 
+	color: #fff; 
+	min-width: 100px;
+
 }
 
 .sign-up-block {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Work Burse - Register</title>
+</head>
+<body>
+	<div>
+		<form action="#" method="POST">
+			<fieldset class = "companyField">
+				<legend><b>Регистрация работодателя</b></legend>
+				<article class = "companyType">
+					<select name="typeOfCompany" id="">
+						<option value="1">ООО</option>
+						<option value="2">ЗАО</option>
+						<option value="3">АО</option>
+						<option value="4">УП</option>
+						<option value="5">ТОО</option>
+						<option value="6">Нек. орг</option>
+						<option value="7">Общ. орг</option>
+						<option value="8">Фонд</option>
+						<option value="9">Гос. корп.</option>
+						<option value="10">ИП</option>
+						<option value="11">ОАО</option>
+						<option value="12">ЗАО</option>
+						<option value="13">Другое</option>
+					</select>
+					<input type="text" placeholder="Название компании" class = "input-fld">
+					<label class = "employerClass">
+						<input type="checkbox" class = "input-fld" value = "c-agency" name = "c-agency">
+						<span class = "c-agency-name">Кадровое агенство</span>
+					</label>
+				</article>
+				<article class = "companyInfo">
+					<input type="text" placeholder="Сайт" class = "input-fld">
+					<select name="amountOfWorkers" id="">
+						<option value="50">Менее 50 сотрудников</option>
+						<option value="100">От 51 до 100 сотрудников</option>
+						<option value="250">От 101 до 250 сотрудников</option>
+						<option value="500">От 251 до 500 сотрудников</option>
+						<option value="500+">Более 500 сотрудников</option>
+					</select>
+					<input type = "text" placeholder="Город">
+				</article>
+			</fieldset>
+			<fieldset class = "contactField">
+				<legend><b>Контактное лицо</b></legend>
+				<span>(конфенденциально)</span>
+				<article class = "name-surname">
+					<input type="text" class = "input-fld" placeholder="Имя">
+					<input type="text" class = "input-fld" placeholder="Фамилия">
+				</article>
+				<article class = "contactInfo"> 
+					<input type="email" class = "input-fld" placeholder="Электронная почта">
+					<input type="tel" class = "input-fld" placeholder="Телефон">
+					<input type="tel" class = "input-fld" placeholder="Добавочный номер">
+				</article>
+				<button type="submit" clss = "btn">Зарегестрировать компанию</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
