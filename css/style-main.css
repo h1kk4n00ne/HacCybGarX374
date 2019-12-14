@@ -25,11 +25,11 @@ body {
 	"footer";
 	grid-template-rows: 20px 1fr 20px;
 	background-color: white;
-	min-width: 350px;
+	min-width: 360px;
 }
 
 .platform h1 {
-	font-style: bold;
+	font-weight: bold;
 	font-size: 40px;
 	margin: 0;
 }
@@ -45,7 +45,8 @@ body {
 .main-header {
 	grid-area: header;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 20px 20px;
+	grid-gap: 85%;
 }
 
 .main-information {
@@ -58,6 +59,8 @@ body {
 
 .main-footer {
 	grid-area: footer;
+	font-size: 10px;
+	font-style: italic;
 }
 
 .buttons {
@@ -67,7 +70,7 @@ body {
 }
 
 .btn {
-	background-color: #30a030;
+	background-color: #009dfe;
 	border: 1.5px solid grey;
 	border-radius: 10px;
 	padding: 10px;
@@ -75,10 +78,17 @@ body {
 	vertical-align: center;
 	text-decoration: none;
 	color: #fff; 
-	min-width: 100px;
+	min-width: 110px;
+	font-weight: 600;
+	font-size: 15px;
+	text-shadow: 1px 1px 4px black;	
+	text-transform: uppercase;	
 
 }
 
 .sign-up-block {
 	margin-top: 40px;
+}
+
+.logo {
 }
