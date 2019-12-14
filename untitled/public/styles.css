@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(main-background.jpg);
+    background-size: cover;
+    background-color: #009dfe;
+}
+
+.background {
+
+    font-family: Roboto, monospace;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    height: 100vh;
+}
+
+.visible-content {
+    display: grid;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    grid-template-rows: 20px 1fr 20px;
+    background-color: white;
+    min-width: 300px;
+}
+
+.platform h1 {
+    font-style: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.platform p {
+    font-size: 14px;
+}
+
+.hidden-block {
+    visibility: hidden;
+}
+
+.main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: ;
+}
+
+.main-information {
+    grid-area: main;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: #30a030;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.sign-up-block {
+    margin-top: 40px;
+}
