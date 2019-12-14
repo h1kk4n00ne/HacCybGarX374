@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Work Burse - Register</title>
+	<link rel="stylesheet" href="../css/reglog-style.css">
 </head>
 <body>
-	<div>
-		<form action="#" method="POST">
+	<div class = "reg-form">
+		<form action="#" method="POST" class = "reg-form-main">
 			<fieldset class = "companyField">
 				<legend><b>Регистрация работодателя</b></legend>
 				<article class = "companyType">
@@ -26,21 +27,23 @@
 						<option value="13">Другое</option>
 					</select>
 					<input type="text" placeholder="Название компании" class = "input-fld">
-					<label class = "employerClass">
-						<input type="checkbox" class = "input-fld" value = "c-agency" name = "c-agency">
-						<span class = "c-agency-name">Кадровое агенство</span>
-					</label>
+					<p>
+						<label class = "employerClass">
+							<input type="checkbox" value = "c-agency" name = "c-agency">
+							<span class = "c-agency-name">Кадровое агенство</span>
+						</label>
+					</p>
 				</article>
 				<article class = "companyInfo">
 					<input type="text" placeholder="Сайт" class = "input-fld">
-					<select name="amountOfWorkers" id="">
+					<select name="amountOfWorkers" id="" form = "reg-form-main">
 						<option value="50">Менее 50 сотрудников</option>
 						<option value="100">От 51 до 100 сотрудников</option>
 						<option value="250">От 101 до 250 сотрудников</option>
 						<option value="500">От 251 до 500 сотрудников</option>
 						<option value="500+">Более 500 сотрудников</option>
 					</select>
-					<input type = "text" placeholder="Город">
+					<input type = "text" class = "input-fld" placeholder="Город">
 				</article>
 			</fieldset>
 			<fieldset class = "contactField">
